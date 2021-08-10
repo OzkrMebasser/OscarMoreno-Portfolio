@@ -1,0 +1,511 @@
+/* ----------------------------------------------------------------
+     [ 02 Start Buttons ]
+-----------------------------------------------------------------*/
+.butn {
+    padding: 12px 34px;
+    background: rgb(2, 2, 2);
+    border-radius: 30px;
+    border: 1px solid transparent;
+    position: relative;
+    z-index: 3;
+    margin-left: 10px;
+    margin-right: 10px;
+    -webkit-box-shadow: 0px 10px 30px rgb(0, 0, 0);
+            box-shadow: 0px 10px 30px rgb(0, 0, 0);
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    cursor: pointer;
+    outline: none !important;
+    overflow: hidden;
+  }
+  .butn span {
+    position: relative;
+    z-index: 2;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+  }
+  .butn:before, .butn:after {
+    content: '';
+    width: 0;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: width 0.4s;
+    transition: width 0.4s;
+    z-index: 1;
+    opacity: .4;
+  }
+  .butn:after {
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+    background: #fff;
+    opacity: 1;
+  }
+  .butn:hover:before, .butn:hover:after {
+    width: 100%;
+  }
+  .butn:hover:after {
+    -webkit-transition-delay: .2s;
+            transition-delay: .2s;
+  }
+  .butn:hover span {
+    -webkit-transition-delay: .2s;
+            transition-delay: .2s;
+  }
+  
+  .butn-bg {
+    background: #c49b66;
+    border-color: #c49b66;
+    color: rgb(255, 255, 255);
+  }
+  .butn-bg:hover span {
+    color: #c49b66;
+  }
+  
+  .butn-light {
+    background: #fff;
+  }
+  .butn-light:before, .butn-light:after {
+    background: #c49b66;
+  }
+  .butn-light:hover span {
+    color: #fff;
+  }
+  .butn-light span {
+    color: #c49b66;
+  }
+  
+  .butn-bord {
+    background: transparent;
+    border: 1px solid #eee;
+  }
+  .butn-bord:before, .butn-bord:after {
+    background: #c49b66;
+  }
+  .butn-bord:hover {
+    border-color: #c49b66;
+  }
+  .butn-bord:hover span {
+    color: rgb(0, 0, 0);
+  }
+  
+  /* ----------------------------------------------------------------
+       [ End Buttons ]
+  -----------------------------------------------------------------*/
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.13);
+    border-radius: 50px;
+  }
+   /* #social a {
+    background-color: rgba(255, 255, 255, 0.048);
+    border-radius: 50px;
+    height: 3rem;
+    left:0;
+    box-sizing: border-box; 
+    margin-top: 2rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+  /* background-position-x: center; */
+  /* justify-content: center; */
+  /* padding-bottom: 20px; */
+  /* display: block; */
+  /* margin: auto; */
+  /* align-items: center; */
+   /* /* position: fixed;
+    align-content: flex-start; 
+  }*/
+   
+
+  .social {
+    display: block;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  @media (max-width: 768px){
+    .social {
+    display: block;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    display: block;
+    text-align: center;
+    padding: 16px;
+    padding-top: 1rem;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    }
+  }
+
+  #social-b {
+    /* margin: auto; */
+    background-color: rgba(255, 255, 255, 0.048);
+    border-radius: 50px; 
+    width:20%;
+    /* height: 4rem; */
+    /* padding-left: 30%;
+    padding-right: 30%; */
+    display: block;
+    /* justify-content: center;
+    vertical-align: middle; */
+    /* position: relative; */
+    /* transform: translate(0%, 80%)   */
+} 
+/* facebook button class*/
+.facebookBtn{
+    background: #4060a500;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 1em;    
+    transition: transform .2s; 
+    border-radius: 50px;
+}
+
+.facebookBtn:before{ /* use :before to add the relevant icons */
+    font-family: "FontAwesome";
+    content: "\f09a"; /* add facebook icon */
+}
+.facebookBtn:hover{
+  color:#c49b66;
+  background-color: rgba(255, 255, 255, 0.103);
+  border-color: solid #ffffff;
+  border-radius: 50px;
+  align-content: center;
+  transform: scale(1.5);
+    /*change the border color on mouse hover */
+}
+
+/* twitter button class*/
+.twitterBtn{
+  background: #4060a500;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 1em;    
+    transition: transform .2s; 
+    border-radius: 50px;     
+}
+
+.twitterBtn:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+      
+}
+
+.twitterBtn:hover{
+  color:#c49b66;
+  background-color: rgba(255, 255, 255, 0.103);
+  border-color: solid #ffffff;
+  border-radius: 50px;
+  align-content: center;
+  transform: scale(1.5);
+  /*change the border color on mouse hover */
+}
+
+
+/* instragram button class*/
+.instagramBtn{
+  background: #4060a500;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 1em;    
+    transition: transform .2s; 
+    border-radius: 50px; 
+    
+}
+
+.instagramBtn:before{
+      font-family: "FontAwesome";
+      content: "\f16d"; /* add Instagram icon */
+}
+
+.instagramBtn:hover{
+  color:#c49b66;
+  background-color: rgba(255, 255, 255, 0.103);
+  border-color: solid #ffffff;
+  border-radius: 50px;
+  align-content: center;
+  transform: scale(1.5);
+    
+}
+/* git button class*/
+.gitBtn{
+  background: #4060a500;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 1em;    
+    transition: transform .2s; 
+    border-radius: 50px;
+}
+
+.gitBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09b"; /* add git icon */
+}
+
+.gitBtn:hover{
+  color:#c49b66;
+  background-color: rgba(255, 255, 255, 0.103);
+  border-color: solid #ffffff;
+  border-radius: 50px;
+  align-content: center;
+  transform: scale(1.5);
+  /*change the border color on mouse hover */
+}
+
+/* git button class END*/
+
+/* ==========*/
+
+/* LinkedIn button class*/
+.linkedInBtn{
+  background: #4060a500;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 1em;    
+    transition: transform .2s; 
+    border-radius: 50px;
+}
+
+.linkedInBtn:before{
+      font-family: "FontAwesome";
+      content: "\f08c"; /* add LinkedIn icon */
+}
+
+.linkedInBtn:hover{
+  color:#c49b66;
+  background-color: rgba(255, 255, 255, 0.103);
+  border-color: solid #ffffff;
+  border-radius: 50px;
+  align-content: center;
+  transform: scale(1.5);
+  /*change the border color on mouse hover */
+}
+
+/* LinkedIn button class END*/
+/* ================================================= */
+
+
+/*Footer buttons*//* ================================================= */
+/* ↓↓ Facebook Footer button */
+.facebookBtn-1{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1em;    
+  border-radius: 50px;
+}
+.facebookBtn-1:before{ /* use :before to add the relevant icons */
+  font-family: "FontAwesome";
+  content: "\f09a"; /* add facebook icon */
+  
+}
+.facebookBtn-1:hover{
+color:#c49b66;
+border-radius: 50px;
+align-content: center;
+  /*change the border color on mouse hover */
+}
+/*↑↑ Facebook Footer button ↑↑*/
+/*=======================================================================*/
+/* ↓↓ Twiter Footer button */
+.twitterBtn-1{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1em;    
+  border-radius: 50px;   
+}
+
+.twitterBtn-1:before{
+      font-family: "FontAwesome";
+      content: "\f099"; /* add twitter icon */
+      
+}
+
+.twitterBtn-1:hover{
+  color:#c49b66;
+border-radius: 50px;
+align-content: center;
+  /*change the border color on mouse hover */
+}
+
+/*↑↑ Twiter Footer button ↑↑*/
+/*=======================================================================*/
+/* ↓↓ Instagram Footer button */
+.instagramBtn-1{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1em;    
+  border-radius: 50px;   
+}
+
+.instagramBtn-1:before{
+      font-family: "FontAwesome";
+      content: "\f16d"; /* add Instagram icon */
+}
+
+.instagramBtn-1:hover{
+  color:#c49b66;
+  border-radius: 50px;
+  align-content: center;
+}
+/*↑↑ Instagram Footer button ↑↑*/
+/*=======================================================================*/
+/* ↓↓ git Footer button */
+.gitBtn-1{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1em;    
+  border-radius: 50px;   
+}
+
+.gitBtn-1:before{
+      font-family: "FontAwesome";
+      content: "\f09b"; /* add git icon */
+}
+
+.gitBtn-1:hover{
+  color:#c49b66;
+  border-radius: 50px;
+  align-content: center;
+  /*change the border color on mouse hover */
+}
+
+/*↑↑ git Footer button ↑↑*/
+/*=======================================================================*/
+/* ↓↓ LinkedIN Footer button */
+.linkedInBtn-1{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1em;    
+  border-radius: 50px;
+}
+
+.linkedInBtn-1:before{
+      font-family: "FontAwesome";
+      content: "\f08c"; /* add LinkedIn icon */
+}
+
+.linkedInBtn-1:hover{
+  color:#c49b66;
+  border-radius: 50px;
+  align-content: center;
+  /*change the border color on mouse hover */
+}
+/*↑↑ LinkedIN Footer button ↑↑*/
+/*Footer buttons*//* ================================================= */
