@@ -1,0 +1,78 @@
+
+.input-container {
+    width: 650px;
+    max-width: 100%;
+    margin: 20px auto;
+    animation: mymove 5s infinite;
+  }
+  
+  @keyframes mymove {
+    from {background-color: #f7f7f7}
+    to {background-color: #fffffffb;}
+  }
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    color: rgb(255, 255, 255);
+    top: -5px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+    
+    
+} 
+.styled-input{
+    float: left;
+    width: 293px;
+    margin: 1rem 0;
+    position: relative;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.274);
+
+}
+.styled-input label {
+    color: #c49b66 ;
+    text-decoration-style: solid;
+    padding: 1.3rem 30px 1rem 30px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+    
+    
+}
+.styled-input.wide {
+    width: 650px;
+    max-width: 100%;
+    
+}
+input,textarea {
+    padding: 30px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #fffdfd52;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    font-family: 'Lato', sans-serif;
+    
+    
+}
+input:focus , textarea:focus {
+    outline: 0;
+}
+textarea {
+    width: 100%;
+    min-height: 5em;
+
+}
+
+/* hide arrows from input number */
+
+input::-webkit-inner-spin-button , input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+

@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #131414;
+	/* font-size: .8rem; */
+}
+
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+/* ----------------------------------------------------------------
+     [ 01 Start Basics ]
+-----------------------------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* outline: none;
+	list-style: none;
+	word-wrap: break-word; */
+	/* font-size: 0; */
+
+}
+
+body {
+	color: rgb(255, 255, 255);
+	background-color: rgb(255, 255, 255);
+	line-height: 1.3;
+	font-weight: 400;
+	font-size: 14px;
+	font-family: 'Rubik', sans-serif;
+	/* overflow-x: hidden !important; */
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Josefin Sans', sans-serif;
+	color: rgb(255, 255, 255);
+
+}
+
+p {
+	font-size: 15px;
+	color: #ffffff;
+	line-height: 1.8;
+	margin: 0;
+	text-justify: auto ;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	
+}
+
+span, a, a:hover {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+.section-padding-{
+	padding: 5rem ;
+	
+}
+.section-padding-med{
+	padding: 80px 0;
+}
+.section-head{
+	margin-bottom: 0px;
+	position: relative;
+	width: 100%;
+}
+
+h4{
+	font-size: 3rem;
+	font-weight: 800;
+	font-family: inherit;
+	letter-spacing: 2px;
+	color: #ffffff;
+	transition: all .4s;
+}
+
+
+
+
+/* ----------------------------------------------------------------
+     [ 03 Start Navbar ]
+-----------------------------------------------------------------*/
+
+/* .navbar{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: transparent;
+	z-index: 9;
+	min-height: 85px;
+
+}
+
+.navbar-nav .nav-link .active{
+   
+		
+			font-size: 13px;
+			font-weight: 500;
+			color: #eee;
+			letter-spacing: .5px;
+			margin: 15px 5px;
+			transition: all .5s;
+
+		}
+	
+
+
+.nav-scroll{
+	background: #fff;
+	box-shadow: 0px 10px 40px rgba(0,0,0,.05);
+	padding: 0;
+	position: fixed;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	transition: transform .5s;
+	transform: translateY(100px);
+
+}
+ */
+
+
+
+/* ----------------------------------------------------------------
+     [ End Navbar ]
+-----------------------------------------------------------------*/
