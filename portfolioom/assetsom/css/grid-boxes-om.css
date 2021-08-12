@@ -227,7 +227,7 @@
     padding-top: 1rem;
     align-items: center;
     justify-content: center;
-    background-image: url(/portfolioom/assetsom/imagenes/OscarMblack.png);
+    background-image: url(/assetsom/imagenes/OscarMblack.png);
     background-position-x: center;
     background-repeat: no-repeat;
 } 
@@ -453,7 +453,7 @@ main .contenedor-img {
     /* padding-top: 1rem; */
     align-items: center;
     justify-content: center;
-    background-image: url(/portfolioom/assetsom/imagenes/OscarMblack.png);
+    background-image: url(/assetsom/imagenes/OscarMblack.png);
     background-position-x: center;
     background-repeat: no-repeat;
    }
