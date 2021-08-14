@@ -76,7 +76,7 @@ let multiItemSlider = (function () {
 		_config = {
 		  isCycling: false,
 		  direction: 'right',
-		  interval: 5000,
+		  interval: 800,
 		  pause: true
 		};
 
