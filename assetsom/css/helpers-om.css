@@ -1,0 +1,84 @@
+.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-content-space-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+.align-items-left {
+    align-items: left;
+    
+}
+
+.align-items-right {
+    align-items: right;
+   
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-justify{
+    text-align:justify;
+}
+.space-around { 
+    justify-content: space-around; 
+  }
+.spacetop{
+    padding-top: 3rem;
+}
+
+.spacetop-lg{
+    padding-top: 6rem;
+}
+
+.spacebottom{
+    padding-bottom: 3rem;
+}
+
+.flex-direction{
+    flex-direction: row-reverse;
+}
+
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-25{
+    margin-bottom: 25px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+
+/*Scroll for Nav to Sections*/
+
+#home{
+    background: none;
+}
+#about-Me{
+    text-decoration: none;
+}
+
+#job-Exp{
+    text-decoration: none;
+}
+
+#portofolio{
+    text-decoration: none;
+}
+
+#blog{
+    text-decoration: none;
+}
+
+#contact-Me{
+    text-decoration: none;
+}
+
+#bg-black{
+    background-color: black;
+}
